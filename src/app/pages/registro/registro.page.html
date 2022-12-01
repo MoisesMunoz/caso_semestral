@@ -1,0 +1,27 @@
+<ion-header>
+  <ion-toolbar class="animate__animated animate__fadeIn">
+    <ion-title>Crear Cuenta</ion-title>
+    <ion-buttons slot="start">
+      <ion-back-button text="Atrás" defaultHref="/loginpage"></ion-back-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+  <ion-text color="dark" class="ion-text-center animate__animated animate__fadeIn">
+    <h4>Crear Cuenta</h4>
+  </ion-text>
+  <form #form="ngForm" (ngSubmit)="onSubmit()" class="animate__animated animate__fadeIn">
+    <ion-item>
+      <ion-label position="floating" color="dark">Usuario</ion-label>
+      <ion-input required type="text" name="usrname" [(ngModel)]="usuario.username" clearInput></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label position="floating" color="dark">Contraseña</ion-label>
+      <ion-input required type="password" name="pass" [(ngModel)]="usuario.password" clearInput></ion-input>
+    </ion-item>
+    <ion-button expand="block" color="dark" type="submit" [disabled]="form.invalid" class="ion-margin-top">
+      Crear cuenta
+    </ion-button>
+  </form>
+</ion-content>

@@ -1,0 +1,20 @@
+<ion-header>
+  <ion-toolbar class="animate__animated animate__fadeIn">
+    <ion-title>Asistencia</ion-title>
+    <ion-buttons slot="start">
+      <ion-back-button text="Atrás" defaultHref="/home"></ion-back-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+  <ion-list *ngFor="let asignatura of listaAsignaturas"  class="animate__animated animate__fadeInRight">
+    <ion-item>
+      <ion-label>
+        <h1>{{asignatura.nomasignatura}}</h1>
+        <h2>{{asignatura.codasignatura}} - {{asignatura.seccion}}</h2>
+        <h2>Asistencia: {{asignatura.clasesasistidas}} de {{asignatura.clasesrealizadas}}</h2>
+      </ion-label>
+    </ion-item>
+  </ion-list>
+</ion-content>

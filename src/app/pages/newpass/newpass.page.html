@@ -1,0 +1,20 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>newpass</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+  <ion-text color="dark" class="ion-text-center ion-text-capitalize">
+    <h1>Restablecer Contraseña</h1>
+  </ion-text>
+  <form #frm="ngForm" (ngSubmit)="onSubmit()">
+    <ion-item>
+      <ion-label position="floating" color="dark">Contraseña</ion-label>
+      <ion-input required type="text" name="username" [(ngModel)]="usuario.password" clearInput></ion-input>
+    </ion-item>
+    <ion-button expand="block" color="dark" shape="round" type="submit" [disabled]="frm.invalid" class="ion-margin-top">
+      submit
+    </ion-button>
+  </form>
+</ion-content>
