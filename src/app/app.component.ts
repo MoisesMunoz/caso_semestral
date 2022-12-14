@@ -2,6 +2,7 @@ import { AsignaturasService } from './services/asignaturas.service';
 import { Component } from '@angular/core';
 import { Storage } from '@ionic/storage-angular';
 import { Asignatura } from './interfaces/asignatura';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-root',
@@ -66,7 +67,7 @@ export class AppComponent {
     clasesasistidas: 0,
   }
 
-  constructor( private storage:Storage, private srvAsignaturas:AsignaturasService ) {}
+  constructor( private storage:Storage, private srvAsignaturas:AsignaturasService, private router:Router ) {}
 
   async ngOnInit() {
     await this.storage.create();
@@ -87,6 +88,15 @@ export class AppComponent {
     } else {
       console.log("Asignaturas ya existen");
     }
+  }
+
+  cerrarSesion(){
+    this.logout();
+    this.router.navigate(['/loginpage']);
+  }
+
+  async logout() {
+    await this.storage.set('session',null);
   }
 
 }

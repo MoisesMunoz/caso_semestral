@@ -1,5 +1,6 @@
 import { CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { TestBed, waitForAsync } from '@angular/core/testing';
+import { Storage } from '@ionic/storage-angular';
 
 import { AppComponent } from './app.component';
 
@@ -8,6 +9,7 @@ describe('AppComponent', () => {
   beforeEach(waitForAsync(() => {
 
     TestBed.configureTestingModule({
+      providers: [Storage],
       declarations: [AppComponent],
       schemas: [CUSTOM_ELEMENTS_SCHEMA],
     }).compileComponents();

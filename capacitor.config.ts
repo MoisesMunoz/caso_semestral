@@ -1,8 +1,8 @@
 import { CapacitorConfig } from '@capacitor/cli';
 
 const config: CapacitorConfig = {
-  appId: 'duocuc.asistencia.moises',
-  appName: 'DuocUC Asistencia',
+  appId: 'duocuc.registrapp.moises',
+  appName: 'RegistrAPP',
   webDir: 'www',
   bundledWebRuntime: false
 };

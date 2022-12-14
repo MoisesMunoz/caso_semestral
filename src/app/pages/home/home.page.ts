@@ -93,6 +93,10 @@ export class HomePage {
     })
   }
 
+  ngOnInit() {
+    this.loadAsignaturas();
+  }
+
   cerrarSesion(){
     this.logout();
     this.router.navigate(['/loginpage']);
@@ -126,7 +130,7 @@ export class HomePage {
     this.listaAsignaturas.splice(ind, 1, item);
   }
 
-  actualizarAsignatura(cod:string, index:number) {
+  async actualizarAsignatura(cod:string, index:number) {
     if (cod=="ASY4131") {
       index=0;
       this.asignaturaActualizada.codasignatura=this.asignatura1.codasignatura;
@@ -193,7 +197,7 @@ export class HomePage {
     }
   }
 
-  codigoIncorrecto() {
+  async codigoIncorrecto() {
     this.alertaCodigoIncorrecto();
   }
 
@@ -201,7 +205,7 @@ export class HomePage {
     let date: Date = new Date();
     const alert = await this.alertController.create({
       header: 'Asistencia Registrada',
-      subHeader: '' + date,
+      subHeader: '',
       message: `${nombre} - Codigo ${codigo}`,
       buttons: [
         {
