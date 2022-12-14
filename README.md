@@ -14,7 +14,7 @@ Posibilidad de crear una cuenta.
 
 Si olvidaste tu contraseña, puedes recuperarla con tu usuario.
 
-<img src="https://user-images.githubusercontent.com/101208973/207494537-19c2cfbd-34e9-4720-ba39-f3a70c8146e2.png" height="800" width="400">
+<img src="https://user-images.githubusercontent.com/101208973/207494958-21cabf97-bd2d-4fa3-86ae-6ce887f8eef6.png" height="800" width="400">
 
 Al entrar a la aplicación usted elige si ver la asistencia o escanear el codigo QR con la camara de su telefono celular.
 
