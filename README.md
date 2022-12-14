@@ -23,3 +23,7 @@ Al entrar a la aplicación usted elige si ver la asistencia o escanear el codigo
 Listado de asistencia, con las clases realizadas y a las que asistio.
 
 <img src="https://user-images.githubusercontent.com/101208973/207492863-c29a1a78-aed7-40ea-a282-56c9b38ff109.png" height="800" width="400">
+
+Enlace de descarga APK (Google Drive).
+
+https://docs.google.com/uc?export=download&id=1gGLV6aX46UuAHoKFkVbWpb0Z1JfvWv7X
